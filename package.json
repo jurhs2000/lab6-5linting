@@ -1,0 +1,27 @@
+{
+  "name": "lab6-5linting",
+  "version": "1.0.0",
+  "description": "laboratorio 6.5 Sistemas y Tecnologias Web - UVG - Seccion 10",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "lint": "eslint index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jurhs2000/lab6-5linting.git"
+  },
+  "author": "Julio Herrera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jurhs2000/lab6-5linting/issues"
+  },
+  "homepage": "https://github.com/jurhs2000/lab6-5linting#readme",
+  "devDependencies": {
+    "eslint": "^7.22.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0"
+  }
+}

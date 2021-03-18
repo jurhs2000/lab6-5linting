@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    background-image: url('./res/bg2.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    width: 100vw;
+    height: 50px;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+}
+
+.navbar p {
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Allerta', sans-serif;
+}
+
+.navbar p:last-child {
+    cursor: pointer;
+}
+
+.start-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 75px);
+}
+
+.start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.start br {
+    width: 100%;
+    content: ' ';
+}
+
+.start button {
+    margin: 20px;
+    padding: 5px 30px 5px 30px;
+    border-radius: 10px;
+    font-family: 'Allerta', sans-serif;
+    font-size: 2em;
+    background-color: white;
+    border: 5px solid black;
+    cursor: pointer;
+    color: black;
+}
+
+.start button:last-child {
+    break-after: always;
+}
+
+.steps {
+    position: fixed;
+    top: 0;
+    right: 20px;
+    font-family: 'Allerta', sans-serif;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.steps + div {
+    background-color: white;
+}
+
+.navbar + div {
+    top: 50px;
+    position: relative;
+}
+
+.gridContainer {
+    width: 100vw;
+    height: 100vh;
+}
+
+.player {
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.up {
+    background-image: url("./res/up.gif"), url("./res/space2.png");
+}
+
+.down {
+    background-image: url("./res/down.gif"), url("./res/space2.png");
+}
+
+.right {
+    background-image: url("./res/right.gif"), url("./res/space2.png");
+}
+
+.left {
+    background-image: url("./res/left.gif"), url("./res/space2.png");
+}
+
+.win {
+    background-image: url("./res/win1.gif"), url("./res/space2.png");
+}
+
+.wall1 {
+    width: 50px;
+    height: 50px;
+    background-image: url("./res/wall1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.wall2 {
+    width: 50px;
+    height: 50px;
+    background-image: url("./res/wall3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.wall3 {
+    width: 50px;
+    height: 50px;
+    background-image: url("./res/wall2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.goal {
+    width: 50px;
+    height: 50px;
+    background-image: url("./res/goal2.png"), url("./res/space2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.space {
+    width: 50px;
+    height: 50px;
+    background-image: url("./res/space2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.end-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 75px);
+}
+
+.end {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.end p {
+    font-family: 'Allerta', sans-serif;
+    font-size: 5em;
+    margin: 0;
+}
+
+.end p:last-child {
+    font-size: 3em;
+}
