@@ -15,7 +15,7 @@ module.exports = {
   },
   plugins: [
     'react',
-    'html'
+    'html',
   ],
   rules: {
     semi: ['error', 'never'],

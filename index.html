@@ -14,7 +14,6 @@
     <div id="root"></div>
 
     <script type="text/babel">
-        /* eslint-disable no-undef */
         /* eslint-disable no-use-before-define */
         /* eslint-disable react/destructuring-assignment */
         /* eslint-disable react/prop-types */
@@ -53,6 +52,7 @@
   )
 
           const StartScreen = () => {
+            // eslint-disable-next-line no-undef
             const [difficulties, setDifficulties] = React.useState(DIFFICULTIES.EASY)
             return (
               <div className="start-container">
@@ -158,14 +158,18 @@
               }
             }
 
+            // eslint-disable-next-line no-undef
             const [data, setData] = React.useState([])
+            // eslint-disable-next-line no-undef
             const [steps, setSteps] = React.useState(0)
+            // eslint-disable-next-line no-undef
             const [direction, setDirection] = React.useState('down')
             /* useReducer de pos debe ir de ultimo para poder usar setData,
                 setSteps y setDirection en updatePos */
-            // eslint-disable-next-line no-unused-vars
+            // eslint-disable-next-line no-unused-vars, no-undef
             const [pos, posDispatch] = React.useReducer(updatePos, { i: 1, j: 1 })
 
+            // eslint-disable-next-line no-undef
             React.useEffect(() => {
               // eslint-disable-next-line react/prop-types
               if (data.length === 0) getMaze(props.width, props.height).then((res) => setData(res))
@@ -247,6 +251,7 @@
             // eslint-disable-next-line react/prop-types
             END: ({ difficult, steps }) => (<EndScreen difficult={difficult} steps={steps} />),
           }
+          // eslint-disable-next-line no-undef
           const [screen, setScreen] = React.useState(SCREENS.START)
 
           /* SECTION 3: Logic and render */
@@ -259,6 +264,7 @@
           )
         }
 
+        // eslint-disable-next-line no-undef
         ReactDOM.render(
           <Principal />,
           htmlRoot,
